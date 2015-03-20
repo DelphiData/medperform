@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Lonnie J. Bargo. All rights reserved.
 //
 
-import UIKit
+import UIKit; import Parse
 
 class UserRecordsTableViewController: PFQueryTableViewController {
     
@@ -21,9 +21,11 @@ class UserRecordsTableViewController: PFQueryTableViewController {
         // Configure the PFQueryTableView
         self.parseClassName = "Event"
         self.textKey = "category"
-        self.textKey = "duration"
+        //self.textKey = "duration"
+        self.textKey = "createdAt"
         self.pullToRefreshEnabled = true
         self.paginationEnabled = false
+        
     }
     
     // Define the query that will provide the data for the table view
@@ -38,21 +40,29 @@ class UserRecordsTableViewController: PFQueryTableViewController {
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
         
+        
         var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UserRecordsTableViewCell!
+        
         if cell == nil {
             cell = UserRecordsTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         }
         
         // Extract values from the PFObject to display in the table cell
         
-        cell.durationEventLabel.text = object["duration"] as? String
+       
+        //cell.durationEventLabel.text = object["Duration"] as? String
+        
+        cell.catEventLabel.text = object["category"] as? String
         
         
-        // Date for cell subtitle
+        
+        
+        //Date for cell subtitle
+      
         /*var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateForText = object["createdAt"] as NSDate
-        cell.dateEventLabel.text = dateFormatter.stringFromDate(dateForText)*/
+        let dateForText = object["createdAt"] as? NSDate
+        cell.dateEventLabel.text = dateFormatter.stringFromDate(dateForText!)*/
         
         
         
@@ -77,7 +87,6 @@ class UserRecordsTableViewController: PFQueryTableViewController {
     }
     
     
-    /*Make sure you have set the cells reuse identifier to match what you are setting it to in this code.*/
 
    
 }

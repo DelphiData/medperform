@@ -57,6 +57,7 @@
  */
 @property (nonatomic, strong) NSString *textKey;
 
+
 /*!
  The key to use to display for the cell image view.
  This won't apply if you override tableView:cellForRowAtIndexPath:object:

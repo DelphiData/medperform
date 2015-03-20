@@ -14,6 +14,6 @@ class UserRecordsTableViewCell: PFTableViewCell {
     
     @IBOutlet weak var catEventLabel: UILabel!
     
-    @IBOutlet weak var durationEventLabel: UILabel!
+    
    
 }
