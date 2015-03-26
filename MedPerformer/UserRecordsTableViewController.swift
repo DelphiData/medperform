@@ -31,7 +31,6 @@ class UserRecordsTableViewController: PFQueryTableViewController {
     // Define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery! {
         var query = PFQuery(className: "event")
-        
         query.orderByAscending("category")
         
         
