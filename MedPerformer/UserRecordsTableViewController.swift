@@ -21,8 +21,6 @@ class UserRecordsTableViewController: PFQueryTableViewController {
         // Configure the PFQueryTableView
         self.parseClassName = "Event"
         self.textKey = "category"
-        //self.textKey = "duration"
-        self.textKey = "createdAt"
         self.pullToRefreshEnabled = true
         self.paginationEnabled = false
         
@@ -31,40 +29,44 @@ class UserRecordsTableViewController: PFQueryTableViewController {
     // Define the query that will provide the data for the table view
     override func queryForTable() -> PFQuery! {
         var query = PFQuery(className: "event")
-        query.orderByAscending("category")
+        query.orderByAscending("createdAt")
+        query.whereKey("user", equalTo: PFUser.currentUser())
+        
         
         
         return query
     }
     
+    
+    
     //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
         
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UserRecordsTableViewCell!
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as PFTableViewCell!
         
         if cell == nil {
-            cell = UserRecordsTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         }
         
-        // Extract values from the PFObject to display in the table cell
         
-       
-        //cell.durationEventLabel.text = object["Duration"] as? String
-        
-        cell.catEventLabel.text = object["category"] as? String
+        //cell.textLabel.text = object["category"] as String!
+        //cell?.detailTextLabel?.text = object[“createdAt”] as String!
         
         
         
         
         //Date for cell subtitle
-      
-        /*var dateFormatter = NSDateFormatter()
+        var dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
         let dateForText = object["createdAt"] as? NSDate
-        cell.dateEventLabel.text = dateFormatter.stringFromDate(dateForText!)*/
+        cell.detailTextLabel?.text = dateFormatter.stringFromDate(dateForText!)
         
         
+        /*NSDate *updated = object[createdAt]
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        [dateFormat setDateFormat:@"EEE, MMM d, h:mm a"];
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"Lasted Updated: %@", [dateFormat stringFromDate:updated]];*/
         
         
         
