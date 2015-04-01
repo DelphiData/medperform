@@ -10,9 +10,9 @@ import UIKit
 
 class UserRecordsTableViewCell: PFTableViewCell {
     
-    @IBOutlet weak var dateEventLabel: UILabel!
-    
-    @IBOutlet weak var catEventLabel: UILabel!
+    @IBOutlet weak var catTitle: UILabel!
+   
+    @IBOutlet weak var catDate: UILabel!
     
     
    

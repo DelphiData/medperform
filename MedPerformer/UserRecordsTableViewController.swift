@@ -21,6 +21,7 @@ class UserRecordsTableViewController: PFQueryTableViewController {
         // Configure the PFQueryTableView
         self.parseClassName = "Event"
         self.textKey = "category"
+        self.title = "createdAt"
         self.pullToRefreshEnabled = true
         self.paginationEnabled = false
         
@@ -34,42 +35,29 @@ class UserRecordsTableViewController: PFQueryTableViewController {
         
         
         
+        
         return query
     }
     
     
-    
-    //override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath, object: PFObject) -> PFTableViewCell {
         
         
-        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as PFTableViewCell!
+        var cell = tableView.dequeueReusableCellWithIdentifier("Cell") as UserRecordsTableViewCell!
         
         if cell == nil {
-            cell = PFTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
+            cell = UserRecordsTableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "Cell")
         }
+    
+    var dateUpdated = object.createdAt as NSDate
+    var dateFormat = NSDateFormatter()
+    dateFormat.dateFormat = "EEE, MMM d, h:mm a"
+    
+    cell.catDate.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated))
+    cell.catTitle.text = object["category"] as String!
+     
         
-        
-        //cell.textLabel.text = object["category"] as String!
-        //cell?.detailTextLabel?.text = object[“createdAt”] as String!
-        
-        
-        
-        
-        //Date for cell subtitle
-        var dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        let dateForText = object["createdAt"] as? NSDate
-        cell.detailTextLabel?.text = dateFormatter.stringFromDate(dateForText!)
-        
-        
-        /*NSDate *updated = object[createdAt]
-        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        [dateFormat setDateFormat:@"EEE, MMM d, h:mm a"];
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Lasted Updated: %@", [dateFormat stringFromDate:updated]];*/
-        
-        
-        
+      
         
         
         return cell
@@ -79,16 +67,12 @@ class UserRecordsTableViewController: PFQueryTableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         // Get the new view controller using [segue destinationViewController].
-        /*var detailScene = segue.destinationViewController as YourDetailViewController
+        var detailScene = segue.destinationViewController as DetailUserRecordsViewController
         
         // Pass the selected object to the destination view controller.
         if let indexPath = self.tableView.indexPathForSelectedRow() {
             let row = Int(indexPath.row)
             detailScene.currentObject = objects[row] as? PFObject
-        }*/
+        }
     }
-    
-    
-
-   
 }
