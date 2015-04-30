@@ -528,7 +528,7 @@
                                 <connections>
                                     <outlet property="catDate" destination="Jdo-xv-B81" id="bjM-xe-Sjp"/>
                                     <outlet property="catTitle" destination="Voy-MO-n2M" id="wRK-vl-HMk"/>
-                                    <segue destination="nes-f9-0lM" kind="show" identifier="detailSeg" id="UyT-uc-nM7"/>
+                                    <segue destination="nes-f9-0lM" kind="show" id="HCb-Hs-Pmq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

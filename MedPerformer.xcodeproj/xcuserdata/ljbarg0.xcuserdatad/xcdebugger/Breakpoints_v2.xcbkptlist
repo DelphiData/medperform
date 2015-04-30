@@ -208,12 +208,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedPerformer/UserRecordsTableViewController.swift"
-            timestampString = "449542447.600929"
+            timestampString = "452046332.617109"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "tableView(_:cellForRowAtIndexPath:object:)"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "UserRecordsTableViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
+            timestampString = "451184092.337313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -224,43 +240,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedPerformer/DetailUserRecordsViewController.swift"
-            timestampString = "449547734.114139"
+            timestampString = "451184092.337313"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
+            timestampString = "451184092.337313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
-            timestampString = "449547734.114139"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
-            timestampString = "449547734.114139"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -372,115 +372,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedPerformer/DetailUserRecordsViewController.swift"
-            timestampString = "449547722.03556"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "DetailUserRecordsViewController"
-            landmarkType = "3">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MedPerformer.DetailUserRecordsViewController.currentObject.getter : Swift.Optional&lt;ObjectiveC.PFObject&gt;"
-                  moduleName = "MedPerformer"
-                  urlString = "file:///Users/ljbarg0/Desktop/My%20Watch%20Apps/medperformer/MedPerformer/DetailUserRecordsViewController.swift"
-                  timestampString = "449547722.040443"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MedPerformer.DetailUserRecordsViewController.currentObject.setter : Swift.Optional&lt;ObjectiveC.PFObject&gt;"
-                  moduleName = "MedPerformer"
-                  urlString = "file:///Users/ljbarg0/Desktop/My%20Watch%20Apps/medperformer/MedPerformer/DetailUserRecordsViewController.swift"
-                  timestampString = "449547722.040714"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MedPerformer.DetailUserRecordsViewController.currentObject.materializeForSet : Swift.Optional&lt;ObjectiveC.PFObject&gt;"
-                  moduleName = "MedPerformer"
-                  urlString = "file:///Users/ljbarg0/Desktop/My%20Watch%20Apps/medperformer/MedPerformer/DetailUserRecordsViewController.swift"
-                  timestampString = "449547722.040949"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MedPerformer.DetailUserRecordsViewController.init (MedPerformer.DetailUserRecordsViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; MedPerformer.DetailUserRecordsViewController"
-                  moduleName = "MedPerformer"
-                  urlString = "file:///Users/ljbarg0/Desktop/My%20Watch%20Apps/medperformer/MedPerformer/DetailUserRecordsViewController.swift"
-                  timestampString = "449547722.04119"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "53">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MedPerformer.DetailUserRecordsViewController.init (MedPerformer.DetailUserRecordsViewController.Type)() -&gt; MedPerformer.DetailUserRecordsViewController"
-                  moduleName = "MedPerformer"
-                  urlString = "file:///Users/ljbarg0/Desktop/My%20Watch%20Apps/medperformer/MedPerformer/DetailUserRecordsViewController.swift"
-                  timestampString = "449547722.041395"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "24">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MedPerformer.DetailUserRecordsViewController.init (MedPerformer.DetailUserRecordsViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; MedPerformer.DetailUserRecordsViewController"
-                  moduleName = "MedPerformer"
-                  urlString = "file:///Users/ljbarg0/Desktop/My%20Watch%20Apps/medperformer/MedPerformer/DetailUserRecordsViewController.swift"
-                  timestampString = "449547722.041722"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "31">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
             timestampString = "449547723.61748"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "11"
-            endingLineNumber = "11"
-            landmarkName = "DetailUserRecordsViewController"
-            landmarkType = "3">
+            endingLineNumber = "11">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
@@ -576,13 +472,109 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MedPerformer/DetailUserRecordsViewController.swift"
-            timestampString = "449547905.70792"
+            timestampString = "451184092.337313"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
+            timestampString = "450103952.568402"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "DetailUserRecordsViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
+            timestampString = "450104012.251481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "DetailUserRecordsViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
+            timestampString = "450104016.743288"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "DetailUserRecordsViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/UserRecordsTableViewController.swift"
+            timestampString = "452046332.617109"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "prepareForSegue(_:sender:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/UserRecordsTableViewController.swift"
+            timestampString = "451441699.812154"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "queryForTable()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MedPerformer/DetailUserRecordsViewController.swift"
+            timestampString = "452045803.320597"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "DetailUserRecordsViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

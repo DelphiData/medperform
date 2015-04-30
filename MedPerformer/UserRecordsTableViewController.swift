@@ -34,8 +34,6 @@ class UserRecordsTableViewController: PFQueryTableViewController {
         query.whereKey("user", equalTo: PFUser.currentUser())
         
         
-        
-        
         return query
     }
     
@@ -56,11 +54,7 @@ class UserRecordsTableViewController: PFQueryTableViewController {
     cell.catDate.text = NSString(format: "%@", dateFormat.stringFromDate(dateUpdated))
     cell.catTitle.text = object["category"] as String!
      
-        
-      
-        
-        
-        return cell
+    return cell
     }
     
     // In a storyboard-based application, you will often want to do a little preparation before navigation
